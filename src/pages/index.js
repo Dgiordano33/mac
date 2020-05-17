@@ -19,13 +19,11 @@ const IndexPage = ({
   return (
     <Layout>
       <Helmet>
-        <title>Hi, my name is Daniel Giordano.</title>
-        <p class="lead"><span>This is my website and a start to an epic beginning. Either working together on a project or following along on my writing journey. </span>
-        I help B2B and B2C technology companies acquire and grow their user base with a little bit of marketing, and a splash of dev. 
-         </p>
+        <title>{site.siteMetadata.title}</title>
+        <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
       <HeroHeader/>
-      <h2>Blog Posts &darr;</h2>
+      <h2>This is what I've been writing lately.</h2>
       <div className="grids">
         {Posts}
       </div>
